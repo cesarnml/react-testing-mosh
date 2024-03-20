@@ -1,69 +1,94 @@
-# Testing React Apps
+# React Testing Course by Mosh
 
-This is the starter project for my Reacting testing course where you'll learn everything you need to know to effectively test React apps. You can find the full course at: 
+- [React Testing Course by Mosh](#react-testing-course-by-mosh)
+  - [Lessons](#lessons)
+  - [Notes](#notes)
 
-https://codewithmosh.com 
+## Lessons
 
-## About this Project 
+- [x] ~~_Lesson 01 - Introduction_~~ [2024-03-20]
+- [x] ~~_Lesson 02 - Prerequisites_~~ [2024-03-20]
+- [ ] Lesson 03 - Course Structure
+- [ ] Lesson 04 - How to Take this Course
+- [ ] Lesson 05 - Setting Up the Development Environment
+- [ ] Lesson 06 - Setting Up the Starter Project
+- [ ] Lesson 07 - Setting Up Vitest
+- [ ] Lesson 08 - Setting Up React Testing Library
+- [ ] Lesson 09 - Introduction
+- [ ] Lesson 10 - What to Test
+- [ ] Lesson 11 - Testing Rendering
+- [ ] Lesson 12 - Simplifying Test Setup
+- [ ] Lesson 13 - Exercise - Testing UserAccount
+- [ ] Lesson 14 - Testing Lists
+- [ ] Lesson 15 - Exercise - Testing ProductImageGallery
+- [ ] Lesson 16 - Testing User Interactions
+- [ ] Lesson 17 - Exercise - Testing ExpandableText
+- [ ] Lesson 18 - Simplifying Tests
+- [ ] Lesson 19 - Exercise - Testing Searchbox
+- [ ] Lesson 20 - Testing Asynchronous Code
+- [ ] Lesson 21 - Exercise - Testing ToastDemo
+- [ ] Lesson 22 - Working with Component Libraries
+- [ ] Lesson 23 - Exercise - Simplifying Code
+- [ ] Lesson 24 - Is Unit Testing Worth It
+- [ ] Lesson 25 - Catching Common Issues with ESLint
+- [ ] Lesson 26 - Introduction
+- [ ] Lesson 27 - Setting Up Mock Service Worker
+- [ ] Lesson 28 - Testing Data Fetching
+- [ ] Lesson 29 - Exercise - Testing Data Fetching
+- [ ] Lesson 30 - Exercise - Testing Data Fetching
+- [ ] Lesson 31 - Generating Fake Data
+- [ ] Lesson 32 - Mocking Data
+- [ ] Lesson 33 - Exercise - Mocking Data
+- [ ] Lesson 34 - Testing Errors
+- [ ] Lesson 35 - Exercise - Testing Errors
+- [ ] Lesson 36 - Testing the Loading State
+- [ ] Lesson 37 - Exercise - Testing the Loading State
+- [ ] Lesson 38 - Refactoring - Using React Query
+- [ ] Lesson 39 - Wrapping Components for Testing
+- [ ] Lesson 40 - Exercise - Using React Query
+- [ ] Lesson 41 - Exercise - Testing BrowseProductsPage
+- [ ] Lesson 42 - Exercise - Testing Loading Skeletons
+- [ ] Lesson 43 - Exercise - Testing Error Handling
+- [ ] Lesson 44 - Exercise - Testing Data Rendering
+- [ ] Lesson 45 - Exercise - Refactoring Tests
+- [ ] Lesson 46 - Exercise - Testing Filtering
+- [ ] Lesson 47 - Exercise - Refactoring Tests
+- [ ] Lesson 48 - Code Coverage
+- [ ] Lesson 49 - Exercise - Refactoring with React Query
+- [ ] Lesson 50 - Exercise - Extracting CategorySelect
+- [ ] Lesson 51 - Exercise - Extracting ProductTable
+- [ ] Lesson 52 - Introduction
+- [ ] Lesson 53 - What to Test
+- [ ] Lesson 54 - Testing Rendering
+- [ ] Lesson 55 - Exercise - Testing Initial Data
+- [ ] Lesson 56 - Exercise - Refactoring Tests
+- [ ] Lesson 57 - Exercise - Testing Focus
+- [ ] Lesson 58 - Testing Validation Rules
+- [ ] Lesson 59 - Parameterizing Tests
+- [ ] Lesson 60 - Exercise - Testing Validation Rules
+- [ ] Lesson 61 - Exercise - Extracting a Function for Filling Forms
+- [ ] Lesson 62 - Resolving the Act Warning
+- [ ] Lesson 63 - Exercise - Testing Form Submission
+- [ ] Lesson 64 - Testing Form Feedback
+- [ ] Lesson 65 - Introduction
+- [ ] Lesson 66 - What to Test
+- [ ] Lesson 67 - Exercise - Testing Components that Use Context
+- [ ] Lesson 68 - Exercise - Testing Quantity Selector
+- [ ] Lesson 69 - Exercise - Extracting Utility Functions
+- [ ] Lesson 70 - Exercise - Testing Components that Use Redux
+- [ ] Lesson 71 - Exercise - Replacing Redux with React Query
+- [ ] Lesson 72 - Introduction
+- [ ] Lesson 73 - What to Test
+- [ ] Lesson 74 - Mocking the Authentication Status
+- [ ] Lesson 75 - Exercise - Testing AuthStatus
+- [ ] Lesson 76 - Introduction
+- [ ] Lesson 77 - What to Test
+- [ ] Lesson 78 - Testing Routes
+- [ ] Lesson 79 - Extracting navigateTo
+- [ ] Lesson 80 - Exercise - Testing Routes with Parameters
+- [ ] Lesson 81 - Exercise - Testing Invalid Routes
+- [ ] Lesson 82 - Testing Protected Routes
+- [ ] Lesson 83 - Exercise - Testing ProductDetailPage
+- [ ] Lesson 84 - Course Wrap Up
 
-This is a React app built with the following technologies and libraries: 
-
-- Auth0 
-- Tailwind 
-- RadixUI
-- React Router 
-- React Query  
-- Redux Toolkit 
-
-Please follow these instructions carefully to setup this project on your machine. 
-
-## Setting up Auth0 for Authentication
-
-1. **Sign up for an Auth0 Account:**
-
-   If you don't already have an Auth0 account, you can sign up for one at [https://auth0.com/](https://auth0.com/). Auth0 offers a free tier that you can use for your project.
-
-2. **Create a New Application:**
-
-   - Log in to your Auth0 account.
-   - Go to the Auth0 Dashboard.
-   - Click on "Applications" in the left sidebar.
-   - Click the "Create Application" button.
-   - Give your application a name (e.g., "My React App").
-   - Select "Single Page Web Applications" as the application type.
-
-3. **Configure Application Settings:**
-
-   - On the application settings page, configure the following settings:
-     - Allowed Callback URLs: `http://localhost:5173` 
-     - Allowed Logout URLs: `http://localhost:5173` 
-     - Allowed Web Origins: `http://localhost:5173`
-   - Save the changes.
-
-4. **Obtain Auth0 Domain and ClientID:**
-
-   - On the application settings page, you will find your Auth0 Domain and Client ID near the top of the page.
-   - Copy the Auth0 Domain (e.g., `your-auth0-domain.auth0.com`) and Client ID (e.g., `your-client-id`).
-
-5. **Create a `.env.local` File:**
-
-   - In the root directory of the project, you'll find a sample `.env` file. Make a copy and save it as `.env.local`.
-   - Replace the Auth0 Domain and Client ID with the actual values you obtained from Auth0.
-
-
-## Running the App
-
-Now that you have set up Auth0 and configured your environment variables, you can run the React app using the following commands:
-
-```bash
-# Install dependencies
-npm install
-
-# Start the development server
-npm start
-```
-
-This will start the back-end process at `http://localhost:3000`. If port 3000 is in use on your machine, update the port number in the following files and run `npm start` again: 
-
-- json-server.json
-- src/main.tsx
+## Notes
