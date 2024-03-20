@@ -8,7 +8,7 @@
 
 - [x] ~~_Lesson 01 - Introduction_~~ [2024-03-20]
 - [x] ~~_Lesson 02 - Prerequisites_~~ [2024-03-20]
-- [ ] Lesson 03 - Course Structure
+- [x] ~~_Lesson 03 - Course Structure_~~ [2024-03-20]
 - [ ] Lesson 04 - How to Take this Course
 - [ ] Lesson 05 - Setting Up the Development Environment
 - [ ] Lesson 06 - Setting Up the Starter Project
