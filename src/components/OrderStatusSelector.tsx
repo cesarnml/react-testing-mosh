@@ -1,7 +1,7 @@
-import { Select } from "@radix-ui/themes";
+import { Select } from '@radix-ui/themes'
 
 interface Props {
-  onChange: (status: string) => void;
+  onChange: (status: string) => void
 }
 
 const OrderStatusSelector = ({ onChange }: Props) => {
@@ -17,7 +17,7 @@ const OrderStatusSelector = ({ onChange }: Props) => {
         </Select.Group>
       </Select.Content>
     </Select.Root>
-  );
-};
+  )
+}
 
-export default OrderStatusSelector;
+export default OrderStatusSelector

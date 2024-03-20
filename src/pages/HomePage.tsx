@@ -1,4 +1,4 @@
-import Label from "../components/Label";
+import Label from '../components/Label'
 
 const HomePage = () => {
   return (
@@ -6,7 +6,7 @@ const HomePage = () => {
       <h1>Home Page</h1>
       <Label labelId="welcome" />
     </div>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage

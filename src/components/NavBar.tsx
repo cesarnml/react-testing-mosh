@@ -1,19 +1,19 @@
-import { Badge, Flex, Text } from "@radix-ui/themes";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import { MdHome } from "react-icons/md";
-import { Link, NavLink } from "react-router-dom";
-import { useCart } from "../hooks/useCart";
-import AuthStatus from "./AuthStatus";
-import LanguageSelector from "./LanguageSelector";
+import { Badge, Flex, Text } from '@radix-ui/themes'
+import { AiOutlineShoppingCart } from 'react-icons/ai'
+import { MdHome } from 'react-icons/md'
+import { Link, NavLink } from 'react-router-dom'
+import { useCart } from '../hooks/useCart'
+import AuthStatus from './AuthStatus'
+import LanguageSelector from './LanguageSelector'
 
 const NavBar = () => {
-  const { getItemCount } = useCart();
+  const { getItemCount } = useCart()
 
   const links = [
-    { label: "Products", href: "/products" },
-    { label: "Playground", href: "/playground" },
-    { label: "Admin", href: "/admin" },
-  ];
+    { label: 'Products', href: '/products' },
+    { label: 'Playground', href: '/playground' },
+    { label: 'Admin', href: '/admin' },
+  ]
 
   return (
     <Flex p="4" className="border-b" justify="between" role="navigation">
@@ -29,9 +29,7 @@ const NavBar = () => {
               <NavLink
                 to={link.href}
                 className={({ isActive }) =>
-                  isActive
-                    ? "text-zinc-800"
-                    : "text-zinc-700 hover:text-blue-500"
+                  isActive ? 'text-zinc-800' : 'text-zinc-700 hover:text-blue-500'
                 }
               >
                 {link.label}
@@ -49,7 +47,7 @@ const NavBar = () => {
         <AuthStatus />
       </Flex>
     </Flex>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

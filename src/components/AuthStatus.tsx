@@ -1,12 +1,12 @@
-import { useAuth0 } from "@auth0/auth0-react";
-import { Text } from "@radix-ui/themes";
-import LoginButton from "./LoginButton";
-import LogoutButton from "./LogoutButton";
+import { useAuth0 } from '@auth0/auth0-react'
+import { Text } from '@radix-ui/themes'
+import LoginButton from './LoginButton'
+import LogoutButton from './LogoutButton'
 
 const AuthStatus = () => {
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated, isLoading } = useAuth0()
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <div>Loading...</div>
 
   if (isAuthenticated)
     return (
@@ -14,9 +14,9 @@ const AuthStatus = () => {
         <Text>{user!.name}</Text>
         <LogoutButton />
       </div>
-    );
+    )
 
-  return <LoginButton />;
-};
+  return <LoginButton />
+}
 
-export default AuthStatus;
+export default AuthStatus

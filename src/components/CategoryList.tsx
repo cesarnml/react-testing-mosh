@@ -1,18 +1,18 @@
-import { useEffect } from "react";
-import { fetchCategories } from "../store/categorySlice";
-import { useAppDispatch, useAppSelector } from "../store/hooks";
+import { useEffect } from 'react'
+import { fetchCategories } from '../store/categorySlice'
+import { useAppDispatch, useAppSelector } from '../store/hooks'
 
 function CategoryList() {
-  const dispatch = useAppDispatch();
-  const categories = useAppSelector((state) => state.category.list);
-  const loading = useAppSelector((state) => state.category.loading);
-  const error = useAppSelector((state) => state.category.error);
+  const dispatch = useAppDispatch()
+  const categories = useAppSelector((state) => state.category.list)
+  const loading = useAppSelector((state) => state.category.loading)
+  const error = useAppSelector((state) => state.category.error)
 
   useEffect(() => {
-    dispatch(fetchCategories());
-  }, [dispatch]);
+    dispatch(fetchCategories())
+  }, [dispatch])
 
-  if (error) return <div>Error: {error}</div>;
+  if (error) return <div>Error: {error}</div>
 
   return (
     <div>
@@ -27,7 +27,7 @@ function CategoryList() {
         </ul>
       )}
     </div>
-  );
+  )
 }
 
-export default CategoryList;
+export default CategoryList

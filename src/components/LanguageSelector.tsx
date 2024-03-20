@@ -1,9 +1,9 @@
-import { Select } from "@radix-ui/themes";
-import useLanguage from "../hooks/useLanguage";
-import { Language } from "../providers/language/type";
+import { Select } from '@radix-ui/themes'
+import useLanguage from '../hooks/useLanguage'
+import { Language } from '../providers/language/type'
 
 const LanguageSelector = () => {
-  const { currentLanguage, changeLanguage } = useLanguage();
+  const { currentLanguage, changeLanguage } = useLanguage()
 
   return (
     <Select.Root
@@ -16,7 +16,7 @@ const LanguageSelector = () => {
         <Select.Item value="es">ES</Select.Item>
       </Select.Content>
     </Select.Root>
-  );
-};
+  )
+}
 
-export default LanguageSelector;
+export default LanguageSelector

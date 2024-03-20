@@ -1,5 +1,5 @@
 const ProductImageGallery = ({ imageUrls }: { imageUrls: string[] }) => {
-  if (imageUrls.length === 0) return null;
+  if (imageUrls.length === 0) return null
 
   return (
     <ul>
@@ -9,7 +9,7 @@ const ProductImageGallery = ({ imageUrls }: { imageUrls: string[] }) => {
         </li>
       ))}
     </ul>
-  );
-};
+  )
+}
 
-export default ProductImageGallery;
+export default ProductImageGallery

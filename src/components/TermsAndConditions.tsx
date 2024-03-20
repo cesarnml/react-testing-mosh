@@ -1,15 +1,12 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 const TermsAndConditions = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(false)
 
   return (
     <div>
       <h1>Terms & Conditions</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
-        delectus.
-      </p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, delectus.</p>
       <div className="pb-3">
         <label htmlFor="agree">
           <input
@@ -26,7 +23,7 @@ const TermsAndConditions = () => {
         Submit
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default TermsAndConditions;
+export default TermsAndConditions

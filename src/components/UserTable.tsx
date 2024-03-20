@@ -1,7 +1,7 @@
-import { User } from "../entities";
+import { User } from '../entities'
 
 const UserTable = ({ users }: { users: User[] }) => {
-  if (users.length === 0) return <p>No users available.</p>;
+  if (users.length === 0) return <p>No users available.</p>
 
   return (
     <table>
@@ -24,7 +24,7 @@ const UserTable = ({ users }: { users: User[] }) => {
         ))}
       </tbody>
     </table>
-  );
-};
+  )
+}
 
-export default UserTable;
+export default UserTable
