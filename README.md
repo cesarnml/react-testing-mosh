@@ -12,8 +12,8 @@
 - [x] ~~_Lesson 04 - How to Take this Course_~~ [2024-03-20]
 - [x] ~~_Lesson 05 - Setting Up the Development Environment_~~ [2024-03-20]
 - [x] ~~_Lesson 06 - Setting Up the Starter Project_~~ [2024-03-20]
-- [ ] Lesson 07 - Setting Up Vitest
-- [ ] Lesson 08 - Setting Up React Testing Library
+- [x] ~~_Lesson 07 - Setting Up Vitest_~~ [2024-03-20]
+- [x] ~~_Lesson 08 - Setting Up React Testing Library_~~ [2024-03-20]
 - [ ] Lesson 09 - Introduction
 - [ ] Lesson 10 - What to Test
 - [ ] Lesson 11 - Testing Rendering
