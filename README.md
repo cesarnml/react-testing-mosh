@@ -18,11 +18,11 @@
 - [x] ~~_Lesson 10 - What to Test_~~ [2024-03-21]
 - [x] ~~_Lesson 11 - Testing Rendering_~~ [2024-03-21]
 - [x] ~~_Lesson 12 - Simplifying Test Setup_~~ [2024-03-21]
-- [ ] Lesson 13 - Exercise - Testing UserAccount
-- [ ] Lesson 14 - Testing Lists
-- [ ] Lesson 15 - Exercise - Testing ProductImageGallery
-- [ ] Lesson 16 - Testing User Interactions
-- [ ] Lesson 17 - Exercise - Testing ExpandableText
+- [x] ~~_Lesson 13 - Exercise - Testing UserAccount_~~ [2024-03-21]
+- [x] ~~_Lesson 14 - Testing Lists_~~ [2024-03-21]
+- [x] ~~_Lesson 15 - Exercise - Testing ProductImageGallery_~~ [2024-03-21]
+- [x] ~~_Lesson 16 - Testing User Interactions_~~ [2024-03-21]
+- [x] ~~_Lesson 17 - Exercise - Testing ExpandableText_~~ [2024-03-21]
 - [ ] Lesson 18 - Simplifying Tests
 - [ ] Lesson 19 - Exercise - Testing Searchbox
 - [ ] Lesson 20 - Testing Asynchronous Code
