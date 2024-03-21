@@ -14,9 +14,9 @@
 - [x] ~~_Lesson 06 - Setting Up the Starter Project_~~ [2024-03-20]
 - [x] ~~_Lesson 07 - Setting Up Vitest_~~ [2024-03-20]
 - [x] ~~_Lesson 08 - Setting Up React Testing Library_~~ [2024-03-20]
-- [ ] Lesson 09 - Introduction
-- [ ] Lesson 10 - What to Test
-- [ ] Lesson 11 - Testing Rendering
+- [x] ~~_Lesson 09 - Introduction_~~ [2024-03-21]
+- [x] ~~_Lesson 10 - What to Test_~~ [2024-03-21]
+- [x] ~~_Lesson 11 - Testing Rendering_~~ [2024-03-21]
 - [ ] Lesson 12 - Simplifying Test Setup
 - [ ] Lesson 13 - Exercise - Testing UserAccount
 - [ ] Lesson 14 - Testing Lists
