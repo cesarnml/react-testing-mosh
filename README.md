@@ -17,7 +17,7 @@
 - [x] ~~_Lesson 09 - Introduction_~~ [2024-03-21]
 - [x] ~~_Lesson 10 - What to Test_~~ [2024-03-21]
 - [x] ~~_Lesson 11 - Testing Rendering_~~ [2024-03-21]
-- [ ] Lesson 12 - Simplifying Test Setup
+- [x] ~~_Lesson 12 - Simplifying Test Setup_~~ [2024-03-21]
 - [ ] Lesson 13 - Exercise - Testing UserAccount
 - [ ] Lesson 14 - Testing Lists
 - [ ] Lesson 15 - Exercise - Testing ProductImageGallery
