@@ -1,7 +1,13 @@
-import ExpandableText from '@/components/ExpandableText'
+import SearchBox from '@/components/SearchBox'
 
 const PlaygroundPage = () => {
-  return <ExpandableText text={'Hello World'.repeat(10)} />
+  return (
+    <SearchBox
+      onChange={(term) => {
+        console.log(term)
+      }}
+    />
+  )
 }
 
 export default PlaygroundPage
