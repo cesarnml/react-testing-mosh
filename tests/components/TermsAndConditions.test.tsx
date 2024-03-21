@@ -2,17 +2,22 @@ import TermsAndConditions from '@/components/TermsAndConditions'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
-const user = userEvent.setup()
-
 describe('TermsAndConditions', () => {
-  beforeEach(() => {
+  const setup = () => {
+    const user = userEvent.setup()
+
     render(<TermsAndConditions />)
-  })
+
+    return {
+      user,
+      heading: screen.getByRole('heading', { name: /terms & conditions/i }),
+      checkbox: screen.getByRole('checkbox'),
+      button: screen.getByRole('button', { name: /submit/i }),
+    }
+  }
 
   it('should render with correct text and initial state', () => {
-    const heading = screen.getByRole('heading', { name: /terms & conditions/i })
-    const checkbox = screen.getByRole('checkbox')
-    const button = screen.getByRole('button', { name: /submit/i })
+    const { heading, button, checkbox } = setup()
 
     expect(heading).toBeInTheDocument()
     expect(button).toBeDisabled()
@@ -20,8 +25,8 @@ describe('TermsAndConditions', () => {
   })
 
   it('should enable submit button when terms are accepted', async () => {
-    const checkbox = screen.getByRole('checkbox')
-    const button = screen.getByRole('button', { name: /submit/i })
+    const { user, button, checkbox } = setup()
+
     await user.click(checkbox)
 
     expect(button).toBeEnabled()
@@ -29,8 +34,8 @@ describe('TermsAndConditions', () => {
   })
 
   it('should disable submit button when terms are unaccepted', async () => {
-    const checkbox = screen.getByRole('checkbox')
-    const button = screen.getByRole('button', { name: /submit/i })
+    const { user, button, checkbox } = setup()
+
     await user.click(checkbox)
     await user.click(checkbox)
 
