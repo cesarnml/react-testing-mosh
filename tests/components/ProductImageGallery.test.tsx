@@ -1,6 +1,5 @@
 import ProductImageGallery from '@/components/ProductImageGallery'
 import { render, screen } from '@testing-library/react'
-import exp from 'constants'
 
 describe('ProductImageGallery', () => {
   it('should render a list of product images', () => {
