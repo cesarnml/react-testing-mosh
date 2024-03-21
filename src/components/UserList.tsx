@@ -1,6 +1,10 @@
-import { User } from '../entities'
+import { User } from '@/entities'
 
-const UserList = ({ users }: { users: User[] }) => {
+type Props = {
+  users: User[]
+}
+
+const UserList = ({ users }: Props) => {
   if (users.length === 0) return <p>No users available.</p>
 
   return (

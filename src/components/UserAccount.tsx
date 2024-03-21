@@ -1,6 +1,10 @@
-import { User } from '../entities'
+import { User } from '@/entities'
 
-const UserAccount = ({ user }: { user: User }) => {
+type Props = {
+  user: User
+}
+
+const UserAccount = ({ user }: Props) => {
   return (
     <>
       <h2>User Profile</h2>
