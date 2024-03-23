@@ -33,8 +33,8 @@
 - [x] ~~_Lesson 25 - Is Unit Testing Worth It_~~ [2024-03-23]
 - [x] ~~_Lesson 26 - Catching Common Issues with ESLint_~~ [2024-03-23]
 - [x] ~~_Lesson 27 - Introduction_~~ [2024-03-23]
-- [ ] Lesson 28 - Setting Up Mock Service Worker
-- [ ] Lesson 29 - Testing Data Fetching
+- [x] ~~_Lesson 28 - Setting Up Mock Service Worker_~~ [2024-03-23]
+- [x] ~~_Lesson 29 - Testing Data Fetching_~~ [2024-03-23]
 - [ ] Lesson 30 - Exercise - Testing Data Fetching
 - [ ] Lesson 31 - Generating Fake Data
 - [ ] Lesson 32 - Mocking Data
