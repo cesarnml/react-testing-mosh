@@ -43,8 +43,8 @@
 - [x] ~~_Lesson 35 - Exercise - Testing Errors_~~ [2024-03-23]
 - [x] ~~_Lesson 36 - Testing the Loading State_~~ [2024-03-23]
 - [x] ~~_Lesson 37 - Exercise - Testing the Loading State_~~ [2024-03-23]
-- [ ] Lesson 38 - Refactoring - Using React Query
-- [ ] Lesson 39 - Wrapping Components for Testing
+- [x] ~~_Lesson 38 - Refactoring - Using React Query_~~ [2024-03-23]
+- [x] ~~_Lesson 39 - Wrapping Components for Testing_~~ [2024-03-23]
 - [ ] Lesson 40 - Exercise - Using React Query
 - [ ] Lesson 41 - Exercise - Testing BrowseProductsPage
 - [ ] Lesson 42 - Exercise - Testing Loading Skeletons
