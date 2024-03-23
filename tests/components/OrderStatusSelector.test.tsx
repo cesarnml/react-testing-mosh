@@ -47,7 +47,7 @@ describe('OrderStatusSelector', () => {
   })
 
   it('should call `onChange` when option is selected and display `selectedOption`', async () => {
-    // Note: the order that  options are selected matters, since default value is `new`
+    // Note: the order that options are selected matters, since default value is `new`
     const optionValues = ['processed', 'fulfilled', 'new']
 
     const { user, onChange, combobox, findOption } = setup()
