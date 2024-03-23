@@ -1,5 +1,10 @@
+import { Category } from '@/entities'
+
 describe('group', () => {
-  it('should', () => {
-    expect(1).toBe(1)
+  it('should', async () => {
+    const response = await fetch('/categories')
+    const data = (await response.json()) as Category[]
+    console.log('data:', data)
+    expect(data).toHaveLength(3)
   })
 })
