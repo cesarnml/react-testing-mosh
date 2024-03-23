@@ -14,13 +14,15 @@ describe('OrderStatusSelector', () => {
     const user = userEvent.setup()
     const combobox = screen.getByRole('combobox')
 
-    const findOptions = () => screen.getAllByRole('option')
+    const findOptions = () => screen.findAllByRole('option')
+    const findOption = (label: string) => screen.findByRole('option', { name: RegExp(label, 'i') })
     return {
       ...utils,
       user,
       combobox,
       onChange,
       findOptions,
+      findOption,
     }
   }
   it('should render a combobox with a default value of `new`', () => {
@@ -37,23 +39,27 @@ describe('OrderStatusSelector', () => {
     const { user, combobox, findOptions } = setup()
     await user.click(combobox)
 
-    const options = findOptions()
+    const options = await findOptions()
 
     options.forEach((option, index) => {
       expect(option).toHaveTextContent(RegExp(optionValues[index], 'i'))
     })
   })
 
-  it('should call `onChange` when an option is selected and display `selectedOption`', async () => {
-    const { user, findOptions, onChange, combobox } = setup()
-    await user.click(combobox)
-    const options = findOptions()
+  it('should call `onChange` when option is selected and display `selectedOption`', async () => {
+    // Note: the order that  options are selected matters, since default value is `new`
+    const optionValues = ['processed', 'fulfilled', 'new']
 
-    options.forEach(async (option) => {
-      await user.click(option)
-      expect(onChange).toHaveBeenCalledWith(option.textContent?.toLowerCase())
-      expect(combobox).toHaveTextContent(RegExp(option.textContent!, 'i'))
+    const { user, onChange, combobox, findOption } = setup()
+
+    for (const [index, value] of optionValues.entries()) {
       await user.click(combobox)
-    })
+      const selectedOption = await findOption(value)
+      await user.click(selectedOption)
+
+      expect(onChange).toHaveBeenCalledTimes(index + 1)
+      expect(onChange).toHaveBeenCalledWith(value)
+      expect(combobox).toHaveTextContent(RegExp(value, 'i'))
+    }
   })
 })

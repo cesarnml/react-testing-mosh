@@ -28,13 +28,13 @@
 - [x] ~~_Lesson 20 - Testing Asynchronous Code_~~ [2024-03-22]
 - [x] ~~_Lesson 21 - Exercise - Testing ToastDemo_~~ [2024-03-23]
 - [x] ~~_Lesson 22 - Working with Component Libraries_~~ [2024-03-23]
-- [ ] Lesson 23 - Exercise - Simplifying Code
-- [ ] Lesson 24 - Is Unit Testing Worth It
-- [ ] Lesson 25 - Catching Common Issues with ESLint
-- [ ] Lesson 26 - Introduction
-- [ ] Lesson 27 - Setting Up Mock Service Worker
-- [ ] Lesson 28 - Testing Data Fetching
-- [ ] Lesson 29 - Exercise - Testing Data Fetching
+- [x] ~~_Lesson 23 - Exercise - Simplifying Code_~~ [2024-03-23]
+- [x] ~~_Lesson 24 - Exercise - Testing OrderStatusSelector_~~ [2024-03-23]
+- [ ] Lesson 25 - Is Unit Testing Worth It
+- [ ] Lesson 26 - Catching Common Issues with ESLint
+- [ ] Lesson 27 - Introduction
+- [ ] Lesson 28 - Setting Up Mock Service Worker
+- [ ] Lesson 29 - Testing Data Fetching
 - [ ] Lesson 30 - Exercise - Testing Data Fetching
 - [ ] Lesson 31 - Generating Fake Data
 - [ ] Lesson 32 - Mocking Data
