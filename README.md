@@ -39,7 +39,7 @@
 - [x] ~~_Lesson 31 - Generating Fake Data_~~ [2024-03-23]
 - [x] ~~_Lesson 32 - Mocking Data_~~ [2024-03-23]
 - [x] ~~_Lesson 33 - Exercise - Mocking Data_~~ [2024-03-23]
-- [ ] Lesson 34 - Testing Errors
+- [x] ~~_Lesson 34 - Testing Errors_~~ [2024-03-23]
 - [ ] Lesson 35 - Exercise - Testing Errors
 - [ ] Lesson 36 - Testing the Loading State
 - [ ] Lesson 37 - Exercise - Testing the Loading State
