@@ -2,7 +2,7 @@ import ProductDetail from '@/components/ProductDetail'
 import { render, screen } from '@testing-library/react'
 import { db } from '../mocks/db'
 import { server } from '../mocks/server'
-import { http, HttpResponse } from 'msw'
+import { http, HttpResponse, delay } from 'msw'
 
 describe('ProductDetail', () => {
   let productId: number
