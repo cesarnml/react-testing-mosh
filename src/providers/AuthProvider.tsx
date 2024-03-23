@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom'
 const AuthProvider = ({ children }: PropsWithChildren) => {
   const navigate = useNavigate()
 
-  const domain = import.meta.env.VITE_AUTH0_DOMAIN
-  const clientId = import.meta.env.VITE_AUTH0_CLIENTID
+  const domain = import.meta.env.VITE_AUTH0_DOMAIN as string
+  const clientId = import.meta.env.VITE_AUTH0_CLIENTID as string
 
   if (!domain || !clientId) {
     throw new Error('Auth0 is not configured. Follow the instruction on README.md.')

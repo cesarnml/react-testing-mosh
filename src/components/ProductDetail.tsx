@@ -15,10 +15,10 @@ const ProductDetail = ({ productId }: { productId: number }) => {
     setLoading(true)
     fetch('/products/' + productId)
       .then((res) => res.json())
-      .then((data) => setProduct(data))
+      .then((data) => setProduct(data as Product))
       .catch((err) => setError((err as Error).message))
       .finally(() => setLoading(false))
-  }, [])
+  }, [productId])
 
   if (isLoading) return <div>Loading...</div>
 

@@ -27,6 +27,6 @@
     "types": ["vitest/globals"]
   },
 
-  "include": ["src", "tests", "src/environment.d.ts"],
+  "include": ["src", "tests", "src/environment.d.ts", "vite.config.ts", "tailwind.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

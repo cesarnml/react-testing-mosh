@@ -52,7 +52,7 @@ const ProductListPage = withAuthenticationRequired(() => {
 const useProducts = () =>
   useQuery<Product[], Error>({
     queryKey: ['products'],
-    queryFn: () => axios.get('/products').then((res) => res.data),
+    queryFn: () => axios.get<Product[]>('/products').then((res) => res.data),
   })
 
 export default ProductListPage

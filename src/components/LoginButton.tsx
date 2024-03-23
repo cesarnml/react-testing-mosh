@@ -4,7 +4,15 @@ import { Button } from '@radix-ui/themes'
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0()
 
-  return <Button onClick={() => loginWithRedirect()}>Log In</Button>
+  return (
+    <Button
+      onClick={() => {
+        void loginWithRedirect()
+      }}
+    >
+      Log In
+    </Button>
+  )
 }
 
 export default LoginButton

@@ -32,16 +32,18 @@ const ProductForm = ({ product, onSubmit }: Props) => {
   return (
     <form
       name="product"
-      onSubmit={handleSubmit(async (formData) => {
-        try {
-          setSubmitting(true)
-          await onSubmit(formData)
-        } catch (error) {
-          toast.error('An unexpected error occurred')
-        } finally {
-          setSubmitting(false)
-        }
-      })}
+      onSubmit={
+        void handleSubmit(async (formData) => {
+          try {
+            setSubmitting(true)
+            await onSubmit(formData)
+          } catch (error) {
+            toast.error('An unexpected error occurred')
+          } finally {
+            setSubmitting(false)
+          }
+        })
+      }
       className="space-y-3"
     >
       <Box>

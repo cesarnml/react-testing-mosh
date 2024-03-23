@@ -9,7 +9,7 @@ const TagList = () => {
       await delay(500)
       setTags(['tag1', 'tag2', 'tag3'])
     }
-    fetchTags()
+    void fetchTags()
   })
 
   return (

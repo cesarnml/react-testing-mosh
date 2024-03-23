@@ -9,8 +9,7 @@ function CategoryList() {
   const error = useAppSelector((state) => state.category.error)
 
   useEffect(() => {
-    // eslint-disable-next-line @typescript-eslint/no-floating-promises
-    dispatch(fetchCategories())
+    void dispatch(fetchCategories())
   }, [dispatch])
 
   if (error) return <div>Error: {error}</div>
