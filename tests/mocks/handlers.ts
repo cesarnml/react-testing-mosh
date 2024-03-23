@@ -12,4 +12,11 @@ export const handlers = [
   http.get('/products', () => {
     return HttpResponse.json(products)
   }),
+  http.get('/products/:id', ({ params }) => {
+    console.log('params:', params)
+    const product = products.find((product) => product.id === Number(params.id))
+    console.log('product:', product)
+    if (!product) return HttpResponse.json(null)
+    return HttpResponse.json(product)
+  }),
 ]

@@ -1,13 +1,9 @@
-import OrderStatusSelector from '@/components/OrderStatusSelector'
-import { Theme } from '@radix-ui/themes'
+import ProductList from '@/components/ProductList'
 
 const PlaygroundPage = () => {
   return (
     <>
-      <Theme>
-        <OrderStatusSelector onChange={console.log} />
-      </Theme>
-      ,
+      <ProductList />
     </>
   )
 }
