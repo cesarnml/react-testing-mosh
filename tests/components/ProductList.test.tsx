@@ -3,7 +3,6 @@ import { render, screen } from '@testing-library/react'
 import { products } from '../mocks/data'
 import { server } from '../mocks/server'
 import { http, HttpResponse } from 'msw'
-import exp from 'constants'
 
 describe('ProductList', () => {
   it('should render the list of products', async () => {
