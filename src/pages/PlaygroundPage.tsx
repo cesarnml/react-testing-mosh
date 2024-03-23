@@ -1,9 +1,9 @@
-import ProductList from '@/components/ProductList'
+import BrowseProducts from '@/pages/BrowseProductsPage'
 
 const PlaygroundPage = () => {
   return (
     <>
-      <ProductList />
+      <BrowseProducts />
     </>
   )
 }

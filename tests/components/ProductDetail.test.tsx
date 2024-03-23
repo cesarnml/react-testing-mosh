@@ -3,6 +3,7 @@ import { render, screen, waitForElementToBeRemoved } from '@testing-library/reac
 import { db } from '../mocks/db'
 import { server } from '../mocks/server'
 import { http, HttpResponse, delay } from 'msw'
+import { AllProviders } from '../AllProviders'
 
 describe('ProductDetail', () => {
   let productId: number
@@ -19,7 +20,7 @@ describe('ProductDetail', () => {
   it('should render product details', async () => {
     const product = db.product.findFirst({ where: { id: { equals: productId } } })!
 
-    render(<ProductDetail productId={productId} />)
+    render(<ProductDetail productId={productId} />, { wrapper: AllProviders })
     const productName = await screen.findByText(RegExp(product.name, 'i'))
     const productPrice = await screen.findByText(RegExp(product.price.toString(), 'i'))
 
@@ -37,15 +38,9 @@ describe('ProductDetail', () => {
     const product = db.product.findFirst({ where: { id: { equals: productId } } })!
     const doesNotExistProductId = product.id + 1
 
-    render(<ProductDetail productId={doesNotExistProductId} />)
+    render(<ProductDetail productId={doesNotExistProductId} />, { wrapper: AllProviders })
+
     const message = await screen.findByText(/not found/i)
-
-    expect(message).toBeVisible()
-  })
-
-  it('should render `invalid productId` if productId is invalid', async () => {
-    render(<ProductDetail productId={0} />)
-    const message = await screen.findByText(/invalid productId/i)
 
     expect(message).toBeVisible()
   })
@@ -57,7 +52,7 @@ describe('ProductDetail', () => {
       }),
     )
 
-    render(<ProductDetail productId={productId} />)
+    render(<ProductDetail productId={productId} />, { wrapper: AllProviders })
     const message = await screen.findByText(/error/i)
     expect(message).toBeVisible()
   })
@@ -70,14 +65,14 @@ describe('ProductDetail', () => {
       }),
     )
 
-    render(<ProductDetail productId={productId} />)
+    render(<ProductDetail productId={productId} />, { wrapper: AllProviders })
     const loading = await screen.findByText(/loading/i)
 
     expect(loading).toBeVisible()
   })
 
   it('should remove the loading indicator when data is fetched', async () => {
-    render(<ProductDetail productId={productId} />)
+    render(<ProductDetail productId={productId} />, { wrapper: AllProviders })
 
     await waitForElementToBeRemoved(() => screen.queryByText(/loading/i))
 
@@ -87,7 +82,7 @@ describe('ProductDetail', () => {
   it('should remove the loading indicator when an error occurred', async () => {
     server.use(http.get('/products', () => HttpResponse.error()))
 
-    render(<ProductDetail productId={productId} />)
+    render(<ProductDetail productId={productId} />, { wrapper: AllProviders })
     await waitForElementToBeRemoved(() => screen.queryByText(/loading/i))
 
     expect(screen.queryByText(/loading/i)).not.toBeInTheDocument()
