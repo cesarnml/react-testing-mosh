@@ -49,4 +49,16 @@ describe('ProductDetail', () => {
 
     expect(message).toBeVisible()
   })
+
+  it('should render an error message when there is an error', async () => {
+    server.use(
+      http.get('/products/:id', () => {
+        return HttpResponse.error()
+      }),
+    )
+
+    render(<ProductDetail productId={productId} />)
+    const message = await screen.findByText(/error/i)
+    expect(message).toBeVisible()
+  })
 })
