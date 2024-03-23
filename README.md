@@ -26,8 +26,8 @@
 - [x] ~~_Lesson 18 - Simplifying Tests_~~ [2024-03-21]
 - [x] ~~_Lesson 19 - Exercise - Testing Searchbox_~~ [2024-03-21]
 - [x] ~~_Lesson 20 - Testing Asynchronous Code_~~ [2024-03-22]
-- [ ] Lesson 21 - Exercise - Testing ToastDemo
-- [ ] Lesson 22 - Working with Component Libraries
+- [x] ~~_Lesson 21 - Exercise - Testing ToastDemo_~~ [2024-03-23]
+- [x] ~~_Lesson 22 - Working with Component Libraries_~~ [2024-03-23]
 - [ ] Lesson 23 - Exercise - Simplifying Code
 - [ ] Lesson 24 - Is Unit Testing Worth It
 - [ ] Lesson 25 - Catching Common Issues with ESLint

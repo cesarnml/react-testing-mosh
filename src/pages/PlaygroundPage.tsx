@@ -1,12 +1,16 @@
-import SearchBox from '@/components/SearchBox'
+import OrderStatusSelector from '@/components/OrderStatusSelector'
+import { Theme } from '@radix-ui/themes'
 
 const PlaygroundPage = () => {
+  const onChange = () => {}
+
   return (
-    <SearchBox
-      onChange={(term) => {
-        console.log(term)
-      }}
-    />
+    <>
+      <Theme>
+        <OrderStatusSelector onChange={console.log} />
+      </Theme>
+      ,
+    </>
   )
 }
 
