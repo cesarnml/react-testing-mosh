@@ -31,8 +31,8 @@
 - [x] ~~_Lesson 23 - Exercise - Simplifying Code_~~ [2024-03-23]
 - [x] ~~_Lesson 24 - Exercise - Testing OrderStatusSelector_~~ [2024-03-23]
 - [x] ~~_Lesson 25 - Is Unit Testing Worth It_~~ [2024-03-23]
-- [ ] Lesson 26 - Catching Common Issues with ESLint
-- [ ] Lesson 27 - Introduction
+- [x] ~~_Lesson 26 - Catching Common Issues with ESLint_~~ [2024-03-23]
+- [x] ~~_Lesson 27 - Introduction_~~ [2024-03-23]
 - [ ] Lesson 28 - Setting Up Mock Service Worker
 - [ ] Lesson 29 - Testing Data Fetching
 - [ ] Lesson 30 - Exercise - Testing Data Fetching
