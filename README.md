@@ -36,7 +36,7 @@
 - [x] ~~_Lesson 28 - Setting Up Mock Service Worker_~~ [2024-03-23]
 - [x] ~~_Lesson 29 - Testing Data Fetching_~~ [2024-03-23]
 - [x] ~~_Lesson 30 - Exercise - Testing Data Fetching_~~ [2024-03-23]
-- [ ] Lesson 31 - Generating Fake Data
+- [x] ~~_Lesson 31 - Generating Fake Data_~~ [2024-03-23]
 - [ ] Lesson 32 - Mocking Data
 - [ ] Lesson 33 - Exercise - Mocking Data
 - [ ] Lesson 34 - Testing Errors
