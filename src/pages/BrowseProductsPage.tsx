@@ -48,7 +48,12 @@ function BrowseProducts() {
   if (errorProducts) return <div>Error: {errorProducts}</div>
 
   const renderCategories = () => {
-    if (isCategoriesLoading) return <Skeleton />
+    if (isCategoriesLoading)
+      return (
+        <div role="progressbar">
+          <Skeleton />
+        </div>
+      )
     if (errorCategories) return <div>Error: {errorCategories}</div>
     return (
       <Select.Root onValueChange={(categoryId) => setSelectedCategoryId(parseInt(categoryId))}>
