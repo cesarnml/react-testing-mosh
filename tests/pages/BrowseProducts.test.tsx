@@ -17,6 +17,5 @@ describe('BrowseProducts', () => {
         <BrowseProducts />
       </Theme>,
     )
-    const categoryLoadingIndicator = screen.getBy
   })
 })
