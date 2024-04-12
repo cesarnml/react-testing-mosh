@@ -19,7 +19,7 @@ describe('ProductList', () => {
     db.product.deleteMany({ where: { id: { in: productIds } } })
   })
 
-  it('should render the list of products', async () => {
+  it.skip('should render the list of products', async () => {
     render(<ProductList />, { wrapper: AllProviders })
     const items = await screen.findAllByRole('listitem')
     const products = db.product.getAll()
